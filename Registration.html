@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body class="reg-body">
+      <div class="reg-container">  
+      <form action="index.html" method="post" class="reg">
+        <h1>Registration</h1>
+        <fieldset>
+          
+          <legend><span class="number">1</span> Your basic info</legend>
+          <div> 
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Enter Username">
+           </div>
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" placeholder="Enter e-mail">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password" placeholder="Enter Password">
+          
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>
+          <input type="radio" id="13 to 19" value="13 to 19" name="user_age"><label for="over_13" class="light">13 to 19</label><br>
+          <input type="radio" id="over_20" value="over_20" name="user_age"><label for="over_20" class="light">20 or Older</label>
+        
+        </fieldset>
+        
+        <fieldset>
+          
+          <legend><span class="number">2</span> Your profile</legend>
+          
+          <label for="curriculum">Curriculum:</label>
+          <select id="curriculum" name="user_curriculum">
+            <optgroup label="Curriculums">
+              <option value="pre_school">Pre-School</option>
+              <option value="primary_school">Primary School</option>
+              <option value="secondary_school">Secondary School</option>
+              <option value="high_school">High School</option>
+              <option value="college_and_university">College and University</option>
+            </optgroup>
+          </select>
+         <label for="tell_us_more">Tell us more about your curriculum:</label>
+        <textarea id="tell_us_more" name="user_tell_us_more"></textarea>
+        </fieldset>
+          
+        <button class="btn-reg" type="submit">Sign Up</button>
+        
+      </form>
+     </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
